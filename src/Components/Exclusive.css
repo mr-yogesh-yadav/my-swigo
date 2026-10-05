@@ -1,0 +1,122 @@
+.exclusive{
+    padding: 88px 120px;
+    background-image: url("../images/bg2.webp");
+    background-size: cover;
+}
+.exclusive-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    gap: 36px;
+    width: 100%;
+}
+.exclusive-card {
+    /* height: 200px; */
+    /* width: 200px; */
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+.exclusive-img {
+    width: 60px;
+    /* height: 100px; */
+    display: flex;
+    margin: 0 auto 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.exclusive-img img {
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.exclusive-card span {
+    margin-bottom: 0;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.exclusive-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+@media(max-width: 1360px){
+    .exclusive-cards{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (max-width: 1200px) {
+    .exclusive{
+        padding: 80px 80px;
+    }
+    .exclusive-cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+    .exclusive-card {
+        height: 240px;
+    }
+    .exclusive-card span {
+        font-size: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .exclusive{
+        padding: 50px 50px;
+    }
+    .exclusive-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .exclusive-card {
+        height: 230px;
+    }
+    .exclusive-img {
+        width: 85px;
+        height: 85px;
+    }
+    .exclusive-card span {
+        font-size: 18px;
+    }
+}
+@media(max-width: 768px){
+    .exclusive{
+        padding: 50px 30px;
+    }
+}
+@media (max-width: 600px) {
+    .exclusive-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .exclusive-card {
+        height: 210px;
+        padding: 20px 10px;
+    }
+    .exclusive-img {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 12px;
+    }
+    .exclusive-card span {
+        font-size: 17px;
+    }
+}
+@media (max-width: 400px) {
+    .exclusive-cards {
+        grid-template-columns: 1fr;
+    }
+    .exclusive-card {
+        height: 220px;
+    }
+}

@@ -1,0 +1,104 @@
+.award {
+  width: 100%;
+  padding: 88px 0;
+  overflow: hidden;
+}
+.award-wrapper {
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+ -webkit-user-drag: none;
+}
+.award-wrapper:active {
+  cursor: grabbing;
+}
+.award-list {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  width: max-content;
+  will-change: transform;
+}
+.award-card {
+  flex: 0 0 260px;
+  width: 260px;
+  height: 140px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.award-card img {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+@media (max-width: 1200px) {
+  .award {
+    padding: 80px 0;
+  }
+  .award-list {
+    gap: 30px;
+  }
+  .award-card {
+    flex-basis: 240px;
+    width: 240px;
+    height: 130px;
+  }
+}
+@media (max-width: 992px) {
+  .award {
+    padding: 60px 0;
+  }
+  .award-list {
+    gap: 25px;
+  }
+  .award-card {
+    flex-basis: 220px;
+    width: 220px;
+    height: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .award {
+    padding: 50px 0;
+  }
+  .award-list {
+    gap: 20px;
+  }
+  .award-card {
+    flex-basis: 200px;
+    width: 200px;
+    height: 110px;
+    border-radius: 8px;
+  }
+  .award-card img {
+    width: 82%;
+    height: 82%;
+  }
+}
+@media (max-width: 480px) {
+  .award {
+    padding: 40px 0;
+  }
+  .award-list {
+    gap: 15px;
+  }
+  .award-card {
+    flex-basis: 180px;
+    width: 180px;
+    height: 100px;
+  }
+}

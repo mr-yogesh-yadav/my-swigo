@@ -1,0 +1,33 @@
+.mouse-circle {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #f9c802;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: transparent;
+  z-index: 9999;
+  transition:
+    width 0.2s ease,
+    height 0.2s ease;
+}
+.mouse-circle-2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: #7da640;
+  z-index: 10000;
+  transition: opacity 0.3s ease;
+}
+
+body:has(a:hover, button:hover) .mouse-circle {
+  width: 60px;
+  height: 60px;
+}
+body:has(a:hover, button:hover) .mouse-circle-2 {
+  opacity: 0;
+}
